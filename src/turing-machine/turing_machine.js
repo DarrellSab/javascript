@@ -29,10 +29,10 @@ function executeStep(){
     }
 }
 
-while (true){
+let i = 0;
+while (i !== executeStep()){
     printMachine();
 }
-
 function checkOfRule(rule){
     let ruleState = rule.state;
     let ruleRead = rule.read;
